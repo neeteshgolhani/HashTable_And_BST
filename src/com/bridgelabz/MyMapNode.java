@@ -1,20 +1,11 @@
 package com.bridgelabz;
-public class MyMapNode<K, V> {
-    K key;
-    V value;
 
-    // Constructor
-    public MyMapNode(K key, V value) {
+public class MyMapNode {
+    String key;
+    int value;
+
+    public MyMapNode(String key, int value) {
         this.key = key;
         this.value = value;
-    }
-
-    // Getter methods
-    public K getKey() {
-        return key;
-    }
-
-    public V getValue() {
-        return value;
     }
 }
