@@ -1,11 +1,13 @@
 package com.bridgelabz;
+import java.util.LinkedList;
 
-public class MyMapNode {
-    String key;
-    int value;
-
-    public MyMapNode(String key, int value) {
-        this.key = key;
-        this.value = value;
+    public class MyMapNode {
+        String key;
+        String value;
+        LinkedList<MyMapNode> next;
+        public MyMapNode(String key, String value) {
+            this.key = key;
+            this.value = value;
+            this.next = new LinkedList<>();
+        }
     }
-}
